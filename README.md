@@ -12,13 +12,21 @@ ML for classifying deceptive speech from audio/text
   - These are NEO-FFI personality indicators: Neurotiscism, Extraversion, Openness, Agreeableness, and Conscientiousness
   - Also the persons gender
   - And whether their native language is Mandarin Chinese or American English (1/0?)
-- Data is 
 
 ## Notes:
 
-- We should run experiments with nested stratified cross validation (say 5 outer and 3 inner folds)
-- The naive baseline is 53%?
-- The current baseline is 66%?
+### IPUs:
+
+Given train / dev/ test IPU splits:
+Split | Num IPUs | % | Num People | %
+------|----------|---|------------|---
+Train |19390    |35 | 60 | 37
+Dev   |12386    |22 | 51 |31
+Test  |23766    |43 | 51 |31
+
+** Will combine training and dev and do cross validation to have roughly 60/40 split **
+
+Naive baseline accuracy: 62.12% train, 59.04% test
 
 ## TODO:
 
