@@ -18,6 +18,7 @@ ML for classifying deceptive speech from audio/text
 ### IPUs:
 
 Given train / dev/ test IPU splits:
+
 Split | Num IPUs | % | Num People | %
 ------|----------|---|------------|---
 Train |19390    |35 | 60 | 37
